@@ -45,7 +45,7 @@ In result the `compstart;` keyphrase should be replaced with:
 StartFlag - `Comp`
 
 | Hotstring | Generated xml |
-| :---: | :---: |
+| --- | --- |
 |`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">`<br><br>`</Computer>`|
 |`CompPass;`|`<adminPass pass="" />`|
 |`CompAccount;`|`<account username="" password="" type="" />`|
@@ -66,7 +66,7 @@ Computer Eos subsection
 StartFlag - `CompEos`
 
 | Hotstring | Generated XML |
-| :---: | :---: |
+| --- | --- |
 |`CompEosStart;`|`<eosDevice name="" id="" icon="" empty="" passOverride="">`<br><br>`</eosDevice>`|
 |`CompEosNote;`|`<note></note>`|
 |`CompEosMail;`|`<mail username="" pass="" />`|
