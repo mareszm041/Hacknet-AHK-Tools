@@ -34,6 +34,7 @@ In result the `compstart;` keyphrase should be replaced with:
 ## Currently available Hotstrings
 
 ### General
+
 | Hotstring | Generated xml |
 | `Comment;` | `<!-- -->` |
-| `UTFEncoding;` | ```<?xml version = "1.0" encoding = "UTF-8" ?>``` |
+| `UTFEncoding;` | `<?xml version = "1.0" encoding = "UTF-8" ?>` |
