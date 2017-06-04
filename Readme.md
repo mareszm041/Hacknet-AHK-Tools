@@ -17,7 +17,9 @@ Tools are using AutoHotkey Hotstrings, which means, that if you type specific ke
 Internal convention of this script will require you to write a kayphrase ended with `;`, for example: `compstart;` and then push `TAB` to start the replacing procedure. Any and all keyphrase are case-insensitive, meaning that you can type either `compstart;` or `CoMpStArT;`.
 
 Try it yourself! Type:
-```compstart;```
+```
+compstart;
+```
 And push `TAB`.
 In result the `compstart;` keyphrase should be replaced with:
 ```xml
