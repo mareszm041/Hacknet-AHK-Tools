@@ -178,7 +178,7 @@ StartFlag `Miss`
 
 Mission Goals subsection
 
-Starflag `MissGoal`
+StartFlag `MissGoal`
 
 | Hotstring | Generated XML |
 | --- | --- |
@@ -199,7 +199,7 @@ Starflag `MissGoal`
 
 Mission Email subsection
 
-Starflag `MissEmail`
+StartFlag `MissEmail`
 
 | Hotstring | Generated XML |
 | --- | --- |
