@@ -50,7 +50,7 @@ StartFlag - `Comp`
 
 | Hotstring | Generated xml |
 | --- | --- |
-|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">`<br><br>`</Computer>`|
+|`CompStart;`|`<Computer id="" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">`<br><br>`</Computer>`|
 |`CompPass;`|`<adminPass pass="" />`|
 |`CompAccount;`|`<account username="" password="" type="" />`|
 |`CompPorts;`|`<ports></ports>`<br>`<portsForCrack val="" />`|
@@ -63,7 +63,7 @@ StartFlag - `Comp`
 |`CompNear;`|`<positionNear target="" position="" total="" extraDistance="" force=""/>`|
 |`CompFile;`|`<file path="" name=""></file>`|
 |`CompThemeFile;`|`<customthemefile path="" name="" themePath=""/>`|
-|`CompEncryptedFile;`|`<encryptedFile path="" name="" ip="" header="" pass="">`|
+|`CompEncryptedFile;`|`<encryptedFile path="" name="" extension="" ip="" header="" pass="">`|
 
 Computer Eos subsection
 

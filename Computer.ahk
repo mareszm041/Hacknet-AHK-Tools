@@ -54,7 +54,7 @@ Return
 Return
 
 :*:CompEncryptedFile;`t::
-	SendInput, <encryptedFile path="" name="" ip="" header="" pass="">
+	SendInput, <encryptedFile path="" name="" extension="" ip="" header="" pass="">
 Return
 
  ; -----------------------------------------------------
