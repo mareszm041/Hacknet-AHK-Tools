@@ -33,12 +33,6 @@ In result the `compstart;` keyphrase should be replaced with:
 
 ## Currently available Hotstrings
 
-Since AutoHotkeys are able to send any output, some of the following formatting will use following special characters:
-
-- {ENTER} - Ends line and proceeds to next line
-- {SPACE} - Exactly what it says. It's space
-- {UP} - Key Up. Usefull during Header injections.
-
 ### General
 
 | Hotstring | Generated xml |
@@ -52,10 +46,10 @@ StartFlag - `Comp`
 
 | Hotstring | Generated xml |
 | --- | --- |
-|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">`<br>`{Enter}{Enter}</Computer>{UP}`|
+|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">`<br><br>`</Computer>`|
 |`CompPass;`|`<adminPass pass="" />`|
 |`CompAccount;`|`<account username="" password="" type="" />`|
-|`CompPorts;`|`<ports></ports>{ENTER}<portsForCrack val="" />`|
+|`CompPorts;`|`<ports></ports>`<br>`<portsForCrack val="" />`|
 |`CompFirewall;`|`<firewall level="" solution="" additionalTime=""/>`|
 |`CompTrace;`|`<trace time="" />`|
 |`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
@@ -73,7 +67,7 @@ StartFlag - `CompEos`
 
 | Hotstring | Generated XML |
 | --- | --- |
-|`CompEosStart;`|`<eosDevice name="" id="" icon="" empty="" passOverride="">{ENTER}{ENTER}</eosDevice>{UP}`|
+|`CompEosStart;`|`<eosDevice name="" id="" icon="" empty="" passOverride="">`<br><br>`</eosDevice>`|
 |`CompEosNote;`|`<note></note>`|
 |`CompEosMail;`|`<mail username="" pass="" />`|
 |`CompEosFile;`|`<file path="" name=""></file>`|
@@ -84,7 +78,7 @@ StartFlag - `CompMail`
 
 | Hotstring | Generated XML |
 | --- | --- |
-|`CompMailStart;`|`<mailServer name="" color="" generateJunk="">{ENTER}{ENTER}</mailServer>{UP}`|
+|`CompMailStart;`|`<mailServer name="" color="" generateJunk="">`<br><br>`</mailServer>`|
 |`CompMailEmail;`|`<email recipient="" sender="" subject=""></email>`|
 
 Computer MessageBoard daemon
@@ -93,5 +87,73 @@ Starflag - `CompBoard`
 
 | Hotstring | Generated XML |
 | --- | --- |
-|`CompBoardStart;`|`{ENTER}{ENTER}</messageBoard>{UP}`|
+|`CompBoardStart;`|`<messageBoard name="">`<br><br>`</messageBoard>`|
+|`CompBoardThread;`|`<thread></thread>`|
 
+Computer Single-flag daemons
+
+StartFlag - `Comp`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompUpload;`|`<uploadServerDaemon name="" folder="" needsAuth="" color=""/>`|
+|`CompWeb;`|`<addWebServer name="" url="" />`|
+|`CompDeathRow;`|`<deathRowDatabase />`|
+|`CompAcademic;`|`<academicDatabase />`|
+|`CompIsp;`|`<ispSystem />`|
+|`CompMedical;`|`<MedicalDatabase />`|
+|`CompHeart;`|`<HeartMonitor patient=""/>`|
+|`CompClicker;`|`<PointClicker />`|
+|`CompSongChanger;`|`<SongChangerDaemon />`|
+|`CompEntropy;`|`<variableMissionListingServer name="" iconPath="" articleFolderPath="" color="" assigner="" public="" title=""/>`|
+|`CompCSEC;`|`<missionHubServer groupName="" serviceName="" missionFolderPath="" themeColor="" lineColor="" backgroundColor="" allowAbandon=""/>`|
+|`CompCredits;`|`<CreditsDaemon Title="" ButtonText="" ConditionalActionSetToRunOnButtonPressPath=""/>`|
+|`CompCustom;`|`<CustomConnectDisplayDaemon />`|
+|`CompLogo;`|`<LogoDaemon Name="" ShowsTitle="" TextColor="" LogoImagePath=""></LogoDaemon>`|
+|`CompLogoCustom;`|`<LogoCustomConnectDisplayDaemon logo="" title="" overdrawLogo="" buttonAlignment="" />`|
+|`CompWhAuthenticator;`|`<WhitelistAuthenticatorDaemon SelfAuthenticating="" />`|
+|`CompWhRemote;`|`<WhitelistAuthenticatorDaemon Remote=""/>`|
+
+Computer Memory subsection
+
+StartFlag - `CompMem`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompMemDump;`|`<memoryDumpFile name="" path="">`<br><br>`</memoryDumpFile>`|
+|`CompMemStart;`|`<Memory>`<br><br>`</Memory>`|
+|`CompMemData;`|`<Data>`<br><br>`</Data>`|
+|`CompMemBlock;`|`<Block></Block>`|
+|`CompMemCommands;`|`<Commands>`<br><br>`</Commands>`|
+|`CompMemCommand;`|`<Command></Command>`|
+|`CompMemImages;`|`<Images>`<br><br>`</Images>`|
+|`CompMemImage;`|`<Image></Image>`|
+
+Computer IRCDaemon subsection
+
+StartFlag - `CompIRC`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompIRCStart;`|`<IRCDaemon themeColor="" name="" needsLogin="">`<br><br>`</IRCDaemon>`|
+|`CompIRCUser;`|`<user name="" color=""/>`|
+
+Computer DHSDaemon subsection
+
+StartFlag `CompDHS`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompDHSStart;`|`<DHSDaemon groupName="" addsFactionPointOnMissionComplete="" autoClearMissionsOnPlayerComplete="" themeColor="" allowContractAbbandon="">`<br><br>`</DHSDaemon>`|
+|`CompDHSAgent;`|`<agent name="" pass="" color=""/>`|
+
+Computer DatabaseDaemon subsection
+
+StartFlag `CompDB`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompDBStart;`|`<DatabaseDaemon Permissions="" DataType="" Foldername="" Color="" AdminEmailAccount="" AdminEmailHostID="" Name="">`<br><br>`</DatabaseDaemon>`|
+|`CompDBGitCommitEntry;`|`<GitCommitEntry>`<br>`<EntryNumber></EntryNumber>`<br>`<ChangedFiles>`<br>`<String></String>`<br>`</ChangedFiles>`<br>`<Message></Message>`<br>`<UserName></UserName>`<br>`<SourceIP></SourceIP>`<br>`</GitCommitEntry>`|
+|`CompDBTextRecord;`|`<TextRecord>`<br>`<Title></Title>`<br>`<Data></Data>`<br>`</TextRecord>`|
+|`CompDBOnlineAccount;`|`<OnlineAccount>`<br>`<ID></ID>`<br>`<Username></Username>`<br>`<BanStatus></BanStatus>`<br>`<Notes></Notes>`<br>`</OnlineAccount>`|
