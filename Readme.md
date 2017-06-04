@@ -33,6 +33,11 @@ In result the `compstart;` keyphrase should be replaced with:
 
 ## Currently available Hotstrings
 
+Since AutoHotkeys are able to send any output, some of the following formatting will use following special characters:
+
+{ENTER} - Ends line and proceeds to next line
+
+
 ### General
 
 | Hotstring | Generated xml |
@@ -44,5 +49,6 @@ In result the `compstart;` keyphrase should be replaced with:
 
 | Hotstring | Generated xml |
 | --- | --- |
-|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">{Enter}{Enter}</Computer>`|
+|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">{Enter}{Enter}
+</Computer>{UP}`|
 |`CompPass;`|`<adminPass pass="" />`|
