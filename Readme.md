@@ -59,7 +59,6 @@ StartFlag - `Comp`
 |`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
 |`CompRemap;`|`<portRemap></portRemap>`|
 |`CompTracker;`|`<tracker />`|
-|`CompTrace;`|`<trace time="" />`|
 |`CompLink;`|`<dlink target="" />`|
 |`CompNear;`|`<positionNear target="" position="" total="" extraDistance="" force=""/>`|
 |`CompFile;`|`<file path="" name=""></file>`|
