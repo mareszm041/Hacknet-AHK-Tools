@@ -29,6 +29,14 @@ Return
 	SendInput, <admin type="" resetPassword="" isSuper="" />
 Return
 
+:*:CompRemap;`t::
+	SendInput, <portRemap></portRemap>
+Return
+
+:*:CompTracker;`t::
+	SendInput, <tracker />
+Return
+
 :*:CompLink;`t::
 	SendInput, <dlink target="" />
 Return

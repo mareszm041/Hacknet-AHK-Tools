@@ -57,6 +57,8 @@ StartFlag - `Comp`
 |`CompFirewall;`|`<firewall level="" solution="" additionalTime=""/>`|
 |`CompTrace;`|`<trace time="" />`|
 |`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
+|`CompRemap;`|`<portRemap></portRemap>`|
+|`CompTracker;`|`<tracker />`|
 |`CompTrace;`|`<trace time="" />`|
 |`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
 |`CompLink;`|`<dlink target="" />`|
