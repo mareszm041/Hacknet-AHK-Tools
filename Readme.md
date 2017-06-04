@@ -1,16 +1,16 @@
-#Hacknet-AHK-Tools
+# Hacknet-AHK-Tools
 
-##What is this?
+## What is this?
 
 Hacknet-AHK-Tools is a set of Hotstrings that enable you to easily write in Hacknet specific xml.
 
-##Preparing your computer:
+## Preparing your computer:
 
 1. To succesfully run tools, you should first download and install [AutoHotkey](https://autohotkey.com/). This will enable you to run .ahk scripts on your computer.
 2. Download [this project](https://github.com/mareszm041/Hacknet-AHK-Tools/archive/master.zip) either using this link or Github "Clone or Download" -> "Download Zip" button.
 3. After extracting project from Zip, run Main.ahk script using AutoHotkey.
 
-##Using Hacknet-AHK-Tools
+## Using Hacknet-AHK-Tools
 
 After starting Main.ahk script execution, open any Text Editor (for example simple Notepad).
 
