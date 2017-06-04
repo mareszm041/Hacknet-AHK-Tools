@@ -35,6 +35,7 @@ In result the `compstart;` keyphrase should be replaced with:
 
 - [General](https://github.com/mareszm041/Hacknet-AHK-Tools/#general)
 - [Computer](https://github.com/mareszm041/Hacknet-AHK-Tools/#computer)
+- [Mission](https://github.com/mareszm041/Hacknet-AHK-Tools/#mission)
 
 ### General
 
@@ -160,3 +161,49 @@ StartFlag `CompDB`
 |`CompDBGitCommitEntry;`|`<GitCommitEntry>`<br>`<EntryNumber></EntryNumber>`<br>`<ChangedFiles>`<br>`<String></String>`<br>`</ChangedFiles>`<br>`<Message></Message>`<br>`<UserName></UserName>`<br>`<SourceIP></SourceIP>`<br>`</GitCommitEntry>`|
 |`CompDBTextRecord;`|`<TextRecord>`<br>`<Title></Title>`<br>`<Data></Data>`<br>`</TextRecord>`|
 |`CompDBOnlineAccount;`|`<OnlineAccount>`<br>`<ID></ID>`<br>`<Username></Username>`<br>`<BanStatus></BanStatus>`<br>`<Notes></Notes>`<br>`</OnlineAccount>`|
+
+### Mission
+
+StartFlag `Miss`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`MissStart;`|`<mission id="" activeCheck="" shouldIgnoreSenderVerification="">`<br><br>`</mission>`|
+|`MissOnStart;`|`<missionStart val="" suppress=""></missionStart>`|
+|`MissOnEnd;`|`<missionEnd val=""></missionEnd>`|
+|`MissNext;`|`<nextMission IsSilent=""></nextMission>`|
+|`MissBranches;`|`<branchMissions>`<br><br>`</branchMissions>`|
+|`MissBranch;`|`<branch></branch>`|
+|`MissPost;`|`<posting title="" reqs="" requiredRank="" ></posting>`|
+
+Mission Goals subsection
+
+Starflag `MissGoal`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`MissGoalStart;`|`<goals>`<br><br>`</goals>`|
+|`MissGoalFileDeletion;`|`<goal type="filedeletion" target="" file="" path=""/>`|
+|`MissGoalClearFolder;`|`<goal type="clearfolder" target="" path=""/>`|
+|`MissGoalFileDownload;`|`<goal type="filedownload" target="" file="" path=""/>`|
+|`MissGoalFileChange;`|`<goal type="filechange" target="" file="" path="" keyword="" removal="" caseSensitive=""/>`|
+|`MissGoalGetAdmin;`|`<goal type="getadmin" target=""/>`|
+|`MissGoalGetString;`|`<goal type="getstring" target="" />`|
+|`MissGoalDelay;`|`<goal type="delay" time=""/>`|
+|`MissGoalHasFlag;`|`<goal type="hasflag" target=""/>`|
+|`MissGoalFileUpload;`|`<goal type="fileupload" target="" file="" path="" destTarget="" destPath="" decrypt="" decryptPass=""/>`|
+|`MissGoalAddDegree;`|`<goal type="" owner="" degree="" uni="" gpa=""/>`|
+|`MissGoalWipeDegrees;`|`<goal type="wipedegrees" owner=""/>`|
+|`MissGoalSendEmail;`|`<goal type="sendemail" mailServer="" recipient="" subject=""/>`|
+|`MissGoalGetAdminPasswordString;`|`<goal type="getadminpasswordstring" target=""/>`|
+
+Mission Email subsection
+
+Starflag `MissEmail`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`MissEmailStart;`|`<email>`<br>`<sender></sender>`<br>`<subject></subject>`<br>`<body></body>`<br>`<attachments>`<br>`</attachments>`<br>`</email>`|
+|`MissEmailNote;`|`<note title=""></note>`|
+|`MissEmailLink;`|`<link comp="" />`|
+|`MissEmailAccount;`|`<account comp="" user="" pass="" />`|
