@@ -35,8 +35,9 @@ In result the `compstart;` keyphrase should be replaced with:
 
 Since AutoHotkeys are able to send any output, some of the following formatting will use following special characters:
 
-{ENTER} - Ends line and proceeds to next line
-
+- {ENTER} - Ends line and proceeds to next line
+- {SPACE} - Exactly what it says. It's space
+- {UP} - Key Up. Goes 
 
 ### General
 
@@ -47,8 +48,16 @@ Since AutoHotkeys are able to send any output, some of the following formatting 
 
 ### Computer
 
+StartFlag - `Comp`
+
 | Hotstring | Generated xml |
 | --- | --- |
-|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">{Enter}{Enter}
-</Computer>{UP}`|
+|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">\{Enter}{Enter}</Computer>{UP}`|
 |`CompPass;`|`<adminPass pass="" />`|
+|`CompAccount;`|`<account username="" password="" type="" />`|
+|`CompPorts;`|`<ports></ports>{ENTER}<portsForCrack val="" />`|
+|`CompFirewall;`|`<firewall level="" solution="" additionalTime=""/>`|
+|`CompTrace;`|`<trace time="" />`|
+|`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
+|`CompTrace;`|`<trace time="" />`|
+|`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
