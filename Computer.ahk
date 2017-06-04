@@ -2,7 +2,7 @@
  ; Computer section - StartFlag "Comp"
 
 :*:CompStart;`t::
-	SendInput, <Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">{Enter}{Enter}</Computer>{UP}
+	SendInput, <Computer id="" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">{Enter}{Enter}</Computer>{UP}
 Return
 
 :*:CompPass;`t::
