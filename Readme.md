@@ -33,8 +33,8 @@ In result the `compstart;` keyphrase should be replaced with:
 
 ## Currently available Hotstrings
 
-- [General](https://github.com/mareszm041/Hacknet-AHK-Tools/blob/master/Readme.md#General)
-- [Computer](https://github.com/mareszm041/Hacknet-AHK-Tools/blob/master/Readme.md#Computer)
+- [General](https://github.com/mareszm041/Hacknet-AHK-Tools/#general)
+- [Computer](https://github.com/mareszm041/Hacknet-AHK-Tools/#computer)
 
 ### General
 
