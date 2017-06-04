@@ -39,3 +39,10 @@ In result the `compstart;` keyphrase should be replaced with:
 | --- | --- |
 | `Comment;` | `<!-- -->` |
 | `UTFEncoding;` | `<?xml version = "1.0" encoding = "UTF-8" ?>` |
+
+### Computer
+
+| Hotstring | Generated xml |
+| --- | --- |
+|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">{Enter}{Enter}</Computer>`|
+|`CompPass;`|`<adminPass pass="" />`|
