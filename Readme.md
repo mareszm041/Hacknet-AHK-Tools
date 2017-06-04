@@ -29,3 +29,11 @@ In result the `compstart;` keyphrase should be replaced with:
 
 </Computer>
 ```
+*If it didn't work, try again. Replacement procedure relies heavily on kayboard input, so it might fail if the writing was interrupted by, for example, scrolling through this page.*
+
+## Currently available Hotstrings
+
+### General
+| Hotstring | Generated xml |
+| `Comment;` | `<!-- -->` |
+| `UTFEncoding;` | ```<?xml version = "1.0" encoding = "UTF-8" ?>``` |
