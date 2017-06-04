@@ -37,7 +37,7 @@ Since AutoHotkeys are able to send any output, some of the following formatting 
 
 - {ENTER} - Ends line and proceeds to next line
 - {SPACE} - Exactly what it says. It's space
-- {UP} - Key Up. Goes 
+- {UP} - Key Up. Usefull during Header injections.
 
 ### General
 
@@ -52,7 +52,7 @@ StartFlag - `Comp`
 
 | Hotstring | Generated xml |
 | --- | --- |
-|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type=""><br>{Enter}{Enter}</Computer>{UP}`|
+|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">`<br>`{Enter}{Enter}</Computer>{UP}`|
 |`CompPass;`|`<adminPass pass="" />`|
 |`CompAccount;`|`<account username="" password="" type="" />`|
 |`CompPorts;`|`<ports></ports>{ENTER}<portsForCrack val="" />`|
@@ -61,3 +61,37 @@ StartFlag - `Comp`
 |`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
 |`CompTrace;`|`<trace time="" />`|
 |`CompAuto;`|`<admin type="" resetPassword="" isSuper="" />`|
+|`CompLink;`|`<dlink target="" />`|
+|`CompNear;`|`<positionNear target="" position="" total="" extraDistance="" force=""/>`|
+|`CompFile;`|`<file path="" name=""></file>`|
+|`CompThemeFile;`|`<customthemefile path="" name="" themePath=""/>`|
+|`CompEncryptedFile;`|`<encryptedFile path="" name="" ip="" header="" pass="">`|
+
+Computer Eos subsection
+
+StartFlag - `CompEos`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompEosStart;`|`<eosDevice name="" id="" icon="" empty="" passOverride="">{ENTER}{ENTER}</eosDevice>{UP}`|
+|`CompEosNote;`|`<note></note>`|
+|`CompEosMail;`|`<mail username="" pass="" />`|
+|`CompEosFile;`|`<file path="" name=""></file>`|
+
+Computer MailServer subsection
+
+StartFlag - `CompMail`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompMailStart;`|`<mailServer name="" color="" generateJunk="">{ENTER}{ENTER}</mailServer>{UP}`|
+|`CompMailEmail;`|`<email recipient="" sender="" subject=""></email>`|
+
+Computer MessageBoard daemon
+
+Starflag - `CompBoard`
+
+| Hotstring | Generated XML |
+| --- | --- |
+|`CompBoardStart;`|`{ENTER}{ENTER}</messageBoard>{UP}`|
+
