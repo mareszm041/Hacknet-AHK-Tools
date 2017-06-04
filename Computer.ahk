@@ -21,7 +21,7 @@ Return
 	SendInput, <firewall level="" solution="" additionalTime=""/>
 Return
 
-:*:CompTrace:`t::
+:*:CompTrace;`t::
 	SendInput, <trace time="" />
 Return
 

@@ -12,3 +12,7 @@ Return
 :*:SC;`t::
 	SendInput, `; -----------------------------------------------------`n;{SPACE}
 Return
+
+:*:TC;`t::
+SendInput, |````|````|
+Return
