@@ -52,7 +52,7 @@ StartFlag - `Comp`
 
 | Hotstring | Generated xml |
 | --- | --- |
-|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type="">\{Enter}{Enter}</Computer>{UP}`|
+|`CompStart;`|`<Computer id="advExamplePC" name="" ip="" security="" allowsDefaultBootModule="" icon="" type=""><br>{Enter}{Enter}</Computer>{UP}`|
 |`CompPass;`|`<adminPass pass="" />`|
 |`CompAccount;`|`<account username="" password="" type="" />`|
 |`CompPorts;`|`<ports></ports>{ENTER}<portsForCrack val="" />`|
