@@ -46,6 +46,8 @@ In result the `compstart;` keyphrase should be replaced with:
 
 ### Computer
 
+[Return to list](#currently-available-hotstrings)
+
 StartFlag - `Comp`
 
 | Hotstring | Generated xml |
@@ -163,6 +165,8 @@ StartFlag `CompDB`
 |`CompDBOnlineAccount;`|`<OnlineAccount>`<br>`<ID></ID>`<br>`<Username></Username>`<br>`<BanStatus></BanStatus>`<br>`<Notes></Notes>`<br>`</OnlineAccount>`|
 
 ### Mission
+
+[Return to list](#currently-available-hotstrings)
 
 StartFlag `Miss`
 
