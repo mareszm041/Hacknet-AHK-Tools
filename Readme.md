@@ -35,7 +35,7 @@ In result the `compstart;` keyphrase should be replaced with:
 
 - [General](https://github.com/mareszm041/Hacknet-AHK-Tools/#general)
 - [Computer](https://github.com/mareszm041/Hacknet-AHK-Tools/#computer)
-- [Mission](https://github.com/mareszm041/Hacknet-AHK-Tools/#mission)
+- [Mission](#mission)
 
 ### General
 
