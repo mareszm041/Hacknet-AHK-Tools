@@ -39,12 +39,6 @@ In result the `compstart;` keyphrase should be replaced with:
 
 ### General
 
-<script>
-table.md-table {
-    table-layout: fixed;
-}
-</script>
-
 | Hotstring | Generated xml |
 | --- | --- |
 | `Comment;` | `<!-- -->` |
