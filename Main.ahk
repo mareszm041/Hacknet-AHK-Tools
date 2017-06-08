@@ -8,3 +8,4 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include General.ahk
 #Include Computer.ahk
 #Include Mission.ahk
+#Include ConditionalActions.ahk

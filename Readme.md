@@ -36,6 +36,7 @@ In result the `compstart;` keyphrase should be replaced with:
 - [General](#general)
 - [Computer](#computer)
 - [Mission](#mission)
+- [Conditional Actions](#conditional-actions)
 
 ### General
 
@@ -43,6 +44,14 @@ In result the `compstart;` keyphrase should be replaced with:
 | --- | --- |
 | `Comment;` | `<!-- -->` |
 | `UTFEncoding;` | `<?xml version = "1.0" encoding = "UTF-8" ?>` |
+
+General Responsive section
+
+StartFlag "Resp"
+
+| Hotstring | Function |
+| --- | --- |
+| `RespRoot;` | Opens explorer to let you choose file. Then inserts path to selected file in editor. Path is relative to your Extension folder directory. |
 
 ### Computer
 
@@ -211,3 +220,54 @@ StartFlag `MissEmail`
 |`MissEmailNote;`|`<note title=""></note>`|
 |`MissEmailLink;`|`<link comp="" />`|
 |`MissEmailAccount;`|`<account comp="" user="" pass="" />`|
+
+### Conditional Actions
+
+[Return to list](#currently-available-hotstrings)
+
+Conditional Actions section
+
+StartFlag "Cond"
+
+| Hotstring | Generated XML |
+| --- | --- |
+| `CondStart;` | `<ConditionalActions>`<br><br>`</ConditionalActions>` |
+| `CondFunc;` | `<RunFunction FunctionName="" FunctionValue="" />` |
+| `CondLoadMiss;` | `<LoadMission MissionName="" />` |
+| `CondAddAsset;` | `<AddAsset FileName="" FileContents="" TargetComp="" TargetFolderpath="" />` |
+| `CondCopyAsset;` | `<CopyAsset DestFilePath="" DestComp="" SourceComp="" SourceFileName="" SourceFilePath="" />` |
+| `CondAddMiss;` | `<AddMissionToHubServer MissionFilepath="" TargetComp="" AssignmentTag=""/>` |
+| `CondAddMissCSEC;` | `<AddMissionToHubServer MissionFilepath="" TargetComp="" />` |
+| `CondRemoveMiss;` | `<RemoveMissionFromHubServer MissionFilepath="" TargetComp="" />` |
+| `CondAddThread;` | `<AddThreadToMissionBoard ThreadFilepath="" TargetComp="" />` |
+| `CondAddIRC;` | `<AddIRCMessage Author="" TargetComp="" Delay=""></AddIRCMessage>` |
+| `CondCrashComp;` | `<CrashComputer TargetComp="" CrashSource="" DelayHost="" Delay="" />` |
+| `CondDeleteFile;` | `<DeleteFile TargetComp="" FilePath="" FileName="" DelayHost="" Delay=""/>` |
+| `CondAddCond;` | `<AddConditionalActions Filepath="" DelayHost="" Delay=""/>` |
+| `CondSave;` | `<SaveGame DelayHost="" Delay=""/>` |
+| `CondHackScript;` | `<LaunchHackScript Filepath="" DelayHost="" Delay="" SourceComp="" TargetComp="" RequireLogsOnSource="" RequireSourceIntact=""/>` |
+| `CondSwitchTheme;` | `<SwitchToTheme ThemePathOrName="" FlickerInDuration="" DelayHost="" Delay="" />` |
+| `CondAppend;` | `<AppendToFile DelayHost="" Delay="" TargetComp="" TargetFolderpath="" TargetFilename=""></AppendToFile>` |
+| `CondKillExe;` | `<KillExe DelayHost="" Delay="" ExeName="" />` |
+| `CondHide;` | `<HideNode DelayHost="" Delay="" TargetComp="" />` |
+| `CondHideAll;` | `<HideAllNodes DelayHost="" Delay=""/>` |
+| `CondShow;` | `<ShowNode DelayHost="" Delay="" Target="" />` |
+| `CondGiveAccount;` | `<GivePlayerUserAccount DelayHost="" Delay="" TargetComp="" Username="" />` |
+| `CondChangeIP;` | `<ChangeIP DelayHost="" Delay="" TargetComp="" NewIP="" />` |
+| `CondChangeAlert;` | `<ChangeAlertIcon Target="" Type="" DelayHost="" Delay=""/>` |
+| `CondStartBleed;` | `<StartScreenBleedEffect AlertTitle="" CompleteAction="" TotalDurationSeconds="" DelayHost="" Delay=""></StartScreenBleedEffect>` |
+| `CondCancelBleed;` | `<CancelScreenBleedEffect DelayHost="" Delay="" />` |
+| `CondOnConnect;` | `<OnConnect target="" needsMissionComplete="" requiredFlags="">`<br><br>`</OnConnect>` |
+| `CondHasFlags;` | `<HasFlags requiredFlags="">`<br><br>`</HasFlags>` |
+| `CondOnAdmin;` | `<OnAdminGained target="">`<br><br>`</OnAdminGained>` |
+| `CondInst;` | `<Instantly>`<br><br>`</Instantly>` |
+| `CondNotHaveFlags;` | `<DoesNotHaveFlags Flags="">`<br><br>`</DoesNotHaveFlags>` |
+| `CondOnDisconnect;` | `<OnDisconnect>`<br><br>`</OnDisconnect>` |
+
+Conditional Actions Responsive subsection
+
+StarFlag "CondResp"
+
+| Hotstring | Function |
+| --- | --- |
+| `CondRespIRC;` | Opens gui to let you add single IRC message header. Don't think it's usefull but maybe someone will like it. |
