@@ -45,13 +45,13 @@ In result the `compstart;` keyphrase should be replaced with:
 | `Comment;` | `<!-- -->` |
 | `UTFEncoding;` | `<?xml version = "1.0" encoding = "UTF-8" ?>` |
 
-General Responsive section
+General Responsive subsection
 
 StartFlag "Resp"
 
 | Hotstring | Function |
 | --- | --- |
-| `RespRoot;` | Opens explorer to let you choose file. Then inserts path to selected file in editor. Path is relative to your Extension folder directory. |
+| `RespRoot;` | Opens explorer to let you choose the file. Then inserts path to selected file into editor. Path is relative to Extension folder directory if selected file is inside one. |
 
 ### Computer
 
